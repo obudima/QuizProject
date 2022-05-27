@@ -18,6 +18,26 @@ public class AppTest
     public void allRight()
     {
         Quiz quiz = new Quiz();
+        Question[] questions = new Question[5];
+        questions = new Question[5];
+        for (int i = 0; i < questions.length; i++) {
+
+            questions[i] = new Question();
+            questions[i].setQuestionId(i);
+            questions[i].setName("Вопрос "+i);
+            Option[] options = new Option[4];
+            for (int j = 0; j < options.length; j++) {
+
+                options[j] = new Option();
+                options[j].setOptionId(j);
+                options[j].setCorrect(false);
+                options[j].setUserAnswer(false);
+                options[j].setName("Ответ " + j);
+
+            }
+            questions[i].setOptions(options);
+        }
+        quiz.setQuestions(questions);
         quiz.setCorrect(0, 0);
         quiz.setCorrect(1, 1);
         quiz.setCorrect(2, 2);
@@ -39,6 +59,26 @@ public class AppTest
     public void allFault()
     {
         Quiz quiz = new Quiz();
+        Question[] questions = new Question[5];
+        questions = new Question[5];
+        for (int i = 0; i < questions.length; i++) {
+
+            questions[i] = new Question();
+            questions[i].setQuestionId(i);
+            questions[i].setName("Вопрос "+i);
+            Option[] options = new Option[4];
+            for (int j = 0; j < options.length; j++) {
+
+                options[j] = new Option();
+                options[j].setOptionId(j);
+                options[j].setCorrect(false);
+                options[j].setUserAnswer(false);
+                options[j].setName("Ответ " + j);
+
+            }
+            questions[i].setOptions(options);
+        }
+        quiz.setQuestions(questions);
         quiz.setCorrect(0, 0);
         quiz.setCorrect(1, 1);
         quiz.setCorrect(2, 2);

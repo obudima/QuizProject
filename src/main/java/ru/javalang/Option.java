@@ -34,10 +34,6 @@ public class Option {
         this.userAnswer = userAnswer;
     }
     Option(    ){
-        optionId = 0;
-        name = "Ответ "+0;
-        correct =false;
-        userAnswer = false;
     };
 
 }

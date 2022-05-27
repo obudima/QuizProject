@@ -33,14 +33,6 @@ public class Quiz implements QuestionInterface
     }
 
     public Quiz(){
-        questions = new Question[5];
-        for (int i=0; i<questions.length; i++)
-        {
-            questions[i] = new Question();
-            questions[i].setQuestionId(i);
-            questions[i].setName("Вопрос "+i);
-//            questions[i].setScore((byte) 0);
-        }
     };
 
     public float markEstimate(){

@@ -6,22 +6,7 @@ public class Question implements QuestionInterface{
     private Option[] options;
 //    private byte score;
 
-    Question(    ){
-        this.options = new Option[4];
-//                for (Option i: options){
-//                    i = new Option();
-//                    i.setCorrect(false);
-//                i.setUserAnswer(false);
-//                    i.setName("Ответ "+i);}
-        for (int i=0; i<options.length; i++)
-        {
-            options[i] = new Option();
-            options[i].setOptionId(i);
-            options[i].setCorrect(false);
-            options[i].setUserAnswer(false);
-            options[i].setName("Ответ "+i);
-
-        }
+    Question(){
     };
 
     public int getQuestionId() {
@@ -56,12 +41,6 @@ public class Question implements QuestionInterface{
         this.options[optionNumber].setUserAnswer(true);
     }
 
-//    public byte getScore() {
-//        return score;
-//    }
-//    public void setScore(byte score) {
-//        this.score = score;
-//    }
 
     public float markEstimate(){
         boolean flag = false;
